@@ -20,7 +20,15 @@ GPIO → LED → Resistor → GND
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ```bash
 python3 traffic_light.py
+
+
+### traffic-light-functions branch
+- Refactored code using a generalized function:
+  - `set_light(red, yellow, green)`
+- Removed repetitive GPIO code
+- Improved readability and maintainability
+- Merged into `main` after testing
