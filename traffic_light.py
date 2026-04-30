@@ -19,16 +19,28 @@ def set_light(red, yellow, green):
     GPIO.output(GREEN_PIN, GPIO.HIGH if green else GPIO.LOW)
 
 
-try:
-    while True:
-        set_light(True, False, False)   # Red ON
+def run_state(state):
+    if state == "RED":
+        set_light(True, False, False)
         time.sleep(3)
+        return "GREEN"
 
-        set_light(False, False, True)   # Green ON
+    if state == "GREEN":
+        set_light(False, False, True)
         time.sleep(3)
+        return "YELLOW"
 
-        set_light(False, True, False)   # Yellow ON
+    if state == "YELLOW":
+        set_light(False, True, False)
         time.sleep(1)
+        return "RED"
+
+
+try:
+    current_state = "RED"
+
+    while True:
+        current_state = run_state(current_state)
 
 except KeyboardInterrupt:
     print("Stopping traffic light")
