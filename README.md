@@ -26,7 +26,7 @@ GPIO → LED → Resistor → GND
 python3 traffic_light.py
 
 
-## Development Notes
+## **Development Notes**
 
 This project was improved step-by-step using Git branches.
 
