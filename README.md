@@ -26,9 +26,14 @@ GPIO → LED → Resistor → GND
 python3 traffic_light.py
 
 
-### traffic-light-functions branch
-- Refactored code using a generalized function:
-  - `set_light(red, yellow, green)`
-- Removed repetitive GPIO code
-- Improved readability and maintainability
-- Merged into `main` after testing
+## Development Notes
+
+This project was improved step-by-step using Git branches.
+
+### Basic traffic light
+- Simple sequential control using direct GPIO output
+
+### Refactoring (traffic-light-functions)
+- Introduced `set_light(red, yellow, green)` function
+- Reduced code duplication
+- Made logic easier to read and extend
