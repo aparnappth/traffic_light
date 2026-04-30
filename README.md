@@ -37,3 +37,10 @@ This project was improved step-by-step using Git branches.
 - Introduced `set_light(red, yellow, green)` function
 - Reduced code duplication
 - Made logic easier to read and extend
+
+### State machine refactor
+- Created a `traffic-light-state-machine` branch
+- Refactored the traffic light sequence into a simple state machine
+- Added `current_state` to track the active light state
+- Added `run_state()` to control each state and return the next state
+- This structure makes the project easier to extend with features such as pedestrian button input
