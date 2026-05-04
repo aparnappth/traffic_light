@@ -44,3 +44,11 @@ This project was improved step-by-step using Git branches.
 - Added `current_state` to track the active light state
 - Added `run_state()` to control each state and return the next state
 - This structure makes the project easier to extend with features such as pedestrian button input
+
+### traffic-light-pedestrian branch
+- Added a pedestrian button using GPIO 17
+- Button press is detected during the GREEN state
+- Pedestrian request is stored using `pedestrian_requested`
+- After GREEN and YELLOW, the system enters `RED_PEDESTRIAN`
+- `RED_PEDESTRIAN` holds red longer to simulate pedestrian crossing
+- This branch is kept separate from `main` for learning and comparison
