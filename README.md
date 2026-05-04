@@ -52,3 +52,11 @@ This project was improved step-by-step using Git branches.
 - After GREEN and YELLOW, the system enters `RED_PEDESTRIAN`
 - `RED_PEDESTRIAN` holds red longer to simulate pedestrian crossing
 - This branch is kept separate from `main` for learning and comparison
+
+### traffic-light-pedestrian-anytime branch
+- Improved pedestrian button handling
+- Button presses are now detected in all states (RED, GREEN, YELLOW)
+- Added `check_button()` for centralized input handling
+- Added `wait_and_check()` to monitor button during delays
+- System stores requests and serves them at the next safe RED state
+- Merged into pedestrian branch after testing
